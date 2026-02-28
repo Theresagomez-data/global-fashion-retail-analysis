@@ -18,80 +18,72 @@ This project addresses the following business questions:
 
 
 ## Data Source 
-  - Original Dataset: Global Fashion Retail Sales on Kaggle
-  - Cleaned and preprocessed in Python for analysis
-  - Synthetic dataset containing over 4 million simulated transactions across 35 stores in 7 countries (Transactions include multiple currencies (USD, EUR, GBP, CNY))
+- Original Dataset: Global Fashion Retail Sales on Kaggle
+- Cleaned and preprocessed in Python for analysis
+- Synthetic dataset containing over 4 million simulated transactions across 35 stores in 7 countries (Transactions include multiple currencies (USD, EUR, GBP, CNY))
 
 
 ## Data Cleaning and Preparation Process   
-  - Standardized column names using Python
-  - Loaded datasets into SQLite for structured querying
-  - Joined transactional, product, and store tables
-  - Created aggregated analytical datasets using SQL queries
-  - Exported cleaned outputs as CSV files for Tableau visualization
+- Standardized column names using Python
+- Loaded datasets into SQLite for structured querying
+- Joined transactional, product, and store tables
+- Created aggregated analytical datasets using SQL queries
+- Exported cleaned outputs as CSV files for Tableau visualization
 
 
 ## SQL Analysis
-	-	SQL queries were written to produce structured analytical datasets supporting each business question
-	-	Aggregations include revenue totals, time trends, product performance, payment behavior, and pricing comparisons
-	-	Query files are included in the repository under the sql/ directory
+- SQL queries were written to produce structured analytical datasets supporting each business question
+- Aggregations include revenue totals, time trends, product performance, payment behavior, and pricing comparisons
+- Query files are included in the repository under the sql/ directory
 
   
 ## Python Processing
-	-	Python scripts automated dataset preparation and query execution
-	-	Scripts normalize column names and export SQL results into analysis-ready CSV files
-	-	Scripts are located in the scripts/ directory 
-  - Python scripts for data cleaning and query automation:[`scripts/`](scripts/)
+- Python scripts automated dataset preparation and query execution
+- Scripts normalize column names and export SQL results into analysis-ready CSV files
+- Scripts are located in the scripts/ directory 
+- Python scripts for data cleaning and query automation:[`scripts/`](scripts/)
 
 
 ## Analysis & Visualization
 An interactive Tableau dashboard was build to answer the four core business questions.
 
 Charts include:
-	•	Horizontal bar charts for revenue comparisons
-	•	Line charts for time trend analysis
-	•	Dual-axis category performance visualization
-	•	Ranked bar charts for top-performing products
-	•	Payment distribution comparisons
-	•	Heatmap analysis of average unit pricing
+	- Horizontal bar charts for revenue comparisons
+	- Line charts for time trend analysis
+	- Dual-axis category performance visualization
+	- Ranked bar charts for top-performing products
+	- Payment distribution comparisons
+	- Heatmap analysis of average unit pricing
 
 
 ## Tools Used 
-	•	SQL (SQLite) — data querying and aggregation
-	•	Python (Pandas) — data preparation and automation
-	•	Tableau — dashboard visualization and storytelling
+- SQL (SQLite) — data querying and aggregation
+- Python (Pandas) — data preparation and automation
+- Tableau — dashboard visualization and storytelling
 
 
 ## Usage
-  - This CSV was used for both Python analysis and Tableau dashboard visualizations  
+- This CSV was used for both Python analysis and Tableau dashboard visualizations  
 
-  - The workflow mirrors a practical analytics pipeline:
-      Raw CSV Files
-        - Python cleaning and normalization
-        - SQLite database
-        - SQL analytical queries
-        - Output CSV files
-        - Tableau dashboard
-
+- The workflow mirrors a practical analytics pipeline:
+  Raw CSV Files
+  	- Python cleaning and normalization
+    - SQLite database
+    - SQL analytical queries
+    - Output CSV files
+    - Tableau dashboard
 - Python scripts automate loading datasets into SQLite and exporting query results used directly in Tableau.
 
 
 ## Dashboard Structure
 
 ## CQ1 — Revenue Sources
-
   Analysis of total revenue performance by country and store location to identify top-performing markets.
-
 ## CQ2 — Time Trends
-
   Monthly revenue trends highlighting seasonal patterns and regional performance changes.
-
 ## CQ3 — Product Performance
-
   Evaluation of category performance and identification of top-selling SKUs driving overall sales.
-
 ## CQ4 — Customer and Pricing Insights
-
   Comparison of payment method usage and average pricing behavior across countries.
 
 
